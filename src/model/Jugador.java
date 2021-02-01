@@ -17,11 +17,11 @@ public class Jugador implements Comparable<Jugador>, Serializable {
 //    private int _0_idequip;
     private String _1_nomcognoms;
     private Equip _2_equip;
-    private String[] _3_posicio;
+    private String _3_posicio;
     private int _4_gols;
     private int _5_partits;
 
-    public Jugador(String _1_nomcognoms, Equip _2_equip, String[] _3_posicio, int _4_gols, int _5_partits) {
+    public Jugador(String _1_nomcognoms, Equip _2_equip, String _3_posicio, int _4_gols, int _5_partits) {
         this._1_nomcognoms = _1_nomcognoms;
         this._2_equip = _2_equip;
         this._3_posicio = _3_posicio;
@@ -56,11 +56,10 @@ public class Jugador implements Comparable<Jugador>, Serializable {
     }
 
     public String get3_posicio() {
-        String resultat = Arrays.toString(_3_posicio);
-        return resultat.substring(1, resultat.length() - 1);
+        return _3_posicio;
     }
 
-    public void set3_posicio(String[] _3_posicio) {
+    public void set3_posicio(String _3_posicio) {
         this._3_posicio = _3_posicio;
     }
 
